@@ -16,6 +16,23 @@
   " rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="/java/select.js"></script>
+  <script>
+    function onSubmit() {
+        Swal.fire({
+        title: 'Are you sure?',
+        text: " cannot reverese until finish the test",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, bring me to it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = './body/selecttest.html';
+        }
+      })
+    }
+  </script>
 </head>
 
 <body>
